@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Foobar2000
 Comment=Advanced audio player & library manager
-Exec=/home/victor/foobar2000/foobar2000.sh %U
+Exec=sh -c "$HOME/.local/share/foobar2000/foobar2000.sh %U"
 GenericName=Advanced audio player & library manager
 Icon=fb2k
 Type=Application
