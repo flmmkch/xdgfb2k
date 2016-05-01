@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Foobar2000
+Comment=Advanced audio player & library manager
+Exec=/home/victor/foobar2000/foobar2000.sh %U
+GenericName=Advanced audio player & library manager
+Icon=fb2k
+Type=Application
+X-KDE-SubstituteUID=false
+Categories=AudioVideo;Player;
+X-PulseAudio-Properties=media.role=music
+StartupWMClass=foobar2000.exe
+MimeType=application/mp3;application/ogg;application/opus;application/x-ogg;application/x-opus;audio/x-tta;audio/x-vorbis;audio/x-mp3;audio/x-mpeg;audio/x-ape;audio/x-m4a;audio/x-flac
+
