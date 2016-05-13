@@ -5,9 +5,8 @@ Exec=sh -c "$HOME/.local/share/foobar2000/foobar2000.sh %U"
 GenericName=Advanced audio player & library manager
 Icon=fb2k
 Type=Application
-X-KDE-SubstituteUID=false
-Categories=AudioVideo;Player;
+Terminal=false
+Categories=AudioVideo;Audio;Player;
 X-PulseAudio-Properties=media.role=music
 StartupWMClass=foobar2000.exe
-MimeType=application/mp3;application/ogg;application/opus;application/x-ogg;application/x-opus;audio/x-tta;audio/x-vorbis;audio/x-mp3;audio/x-mpeg;audio/x-ape;audio/x-m4a;audio/x-flac
-
+MimeType=application/mp3;application/ogg;application/opus;application/x-ogg;application/x-opus;audio/aac;audio/ac3;audio/ape;audio/mp3;audio/ogg;audio/wav;audio/vorbis;audio/x-aac;audio/x-aiff;audio/x-tta;audio/x-vorbis;audio/x-mp3;audio/x-mpeg;audio/x-ape;audio/x-m4a;audio/x-flac;audio/x-ogg;audio/x-ms-wma;audio/x-wav;audio/x-vorbis+ogg;audio/x-wavpack;audio/x-musepack;audio/x-scpls;audio/mpeg;audio/x-mpegurl;audio/mp4;audio/x-it;audio/x-mod;audio/x-s3m;audio/x-stm;audio/x-xm;x-scheme-handler/itms;x-scheme-handler/itmss;
