@@ -3,11 +3,12 @@
 EXECUTABLE="$(dirname $0)/foobar2000.exe"
 CMD="wine $EXECUTABLE"
 
-items=0
-for arg in "$@"
+item=0
+ARGS=( "$@" )
+for arg in "${ARGS[@]}"
 do
-    wineargs[items]="$(winepath -w "$arg")"
-    items=$(( $items + 1 ))
+    wineargs[$item]="$(winepath -w "$arg")"
+    item=$(( $item + 1 ))
 done
 
-$CMD $wineargs
+$CMD "${wineargs[@]}"
