@@ -1,8 +1,10 @@
 #!/bin/bash
 
-FOOBAR_DIR="$(dirname $0)"
+FOOBAR_DIR="$(readlink -e $(dirname $0))"
+export WINEPREFIX="$FOOBAR_DIR/wineprefix"
 EXECUTABLE="$FOOBAR_DIR/foobar2000.exe"
-CMD="wine $EXECUTABLE"
+WINE="wine"
+CMD="$WINE $EXECUTABLE"
 
 item=0
 ARGS=( "$@" )
