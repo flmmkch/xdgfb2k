@@ -1,6 +1,7 @@
 #!/bin/bash
 
-EXECUTABLE="$(dirname $0)/foobar2000.exe"
+FOOBAR_DIR="$(dirname $0)"
+EXECUTABLE="$FOOBAR_DIR/foobar2000.exe"
 CMD="wine $EXECUTABLE"
 
 item=0
@@ -11,4 +12,5 @@ do
     item=$(( $item + 1 ))
 done
 
+cd "$FOOBAR_DIR"
 $CMD "${wineargs[@]}"
